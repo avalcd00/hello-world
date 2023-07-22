@@ -1,9 +1,23 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.Helloworld" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Theme.Helloworld" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="editTextStyle">@style/Widget.Helloworld.EditText</item>
     </style>
 
-    <style name="Theme.Helloworld" parent="Base.Theme.Helloworld" />
+    <style name="Theme.Helloworld.MyActivityTheme">
+        <item name="colorPrimary">@color/colorAccent</item>
+    </style>
+
+    <style name="Theme.Helloworld.Form">
+        <item name="colorAccent">#FF0000</item>
+    </style>
+
+    <style name="Widget.Helloworld.EditText" parent="Widget.AppCompat.EditText">
+        <item name="android:gravity">center</item>
+    </style>
 </resources>
