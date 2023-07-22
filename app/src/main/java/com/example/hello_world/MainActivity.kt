@@ -15,6 +15,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        val movie = findViewById<MovieView>(R.id.movie)
+        movie.setMovie(Movie("Dune", "http://"))
+
         /*val helloText = findViewById<TextView>(R.id.hello_text)
         helloText.text = "Hello Android"*/
 
