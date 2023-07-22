@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
         /*val helloText = findViewById<TextView>(R.id.hello_text)
         helloText.text = "Hello Android"*/
 
-        val email = findViewById<TextView>(R.id.email)
+        /*val email = findViewById<TextView>(R.id.email)
         val phone = findViewById<TextView>(R.id.phone)
         val sendButton = findViewById<Button>(R.id.send)
 
@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
             val message = "Email: ${email.text}, Teléfono: ${phone.text}"
             Toast.makeText(this, message, Toast.LENGTH_LONG).show()
             Log.d(tag, "Button Clicked")
-        }
+        }*/
 
         //Log.d(tag, "onCreate")
     }
