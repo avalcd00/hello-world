@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val movie = findViewById<MovieView>(R.id.movie)
-        movie.setMovie(Movie("Dune", "http://"))
+        movie.setMovie(Movie("Dune", "https://e0.pxfuel.com/wallpapers/698/615/desktop-wallpaper-phone-dune-thumbnail.jpg"))
 
         /*val helloText = findViewById<TextView>(R.id.hello_text)
         helloText.text = "Hello Android"*/
