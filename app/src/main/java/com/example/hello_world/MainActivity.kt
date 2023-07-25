@@ -7,6 +7,8 @@ import android.webkit.WebView.FindListener
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
+import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
 class MainActivity : AppCompatActivity() {
@@ -19,7 +21,10 @@ class MainActivity : AppCompatActivity() {
         //val movie = findViewById<MovieView>(R.id.movie)
         //.setMovie(Movie("Dune", "https://e0.pxfuel.com/wallpapers/698/615/desktop-wallpaper-phone-dune-thumbnail.jpg"))
 
+        val layaoutManager = GridLayoutManager(this, 3)
+
         val recycler = findViewById<RecyclerView>(R.id.recycler)
+        recycler.layoutManager = layaoutManager
         recycler.adapter = MoviesAdapter(listOf(
             Movie("Movie 1", "https://loremflickr.com/320/240?lock=1"),
             Movie("Movie 2", "https://loremflickr.com/320/240?lock=2"),
@@ -29,7 +34,10 @@ class MainActivity : AppCompatActivity() {
             Movie("Movie 6", "https://loremflickr.com/320/240?lock=6"),
             Movie("Movie 7", "https://loremflickr.com/320/240?lock=7"),
             Movie("Movie 8", "https://loremflickr.com/320/240?lock=8"),
-            Movie("Movie 9", "https://loremflickr.com/320/240?lock=9")
+            Movie("Movie 9", "https://loremflickr.com/320/240?lock=9"),
+            Movie("Movie 10", "https://loremflickr.com/320/240?lock=10"),
+            Movie("Movie 11", "https://loremflickr.com/320/240?lock=11"),
+            Movie("Movie 12", "https://loremflickr.com/320/240?lock=12")
         ))
 
         /*val helloText = findViewById<TextView>(R.id.hello_text)
